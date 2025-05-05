@@ -35,6 +35,12 @@ fi
 rsync -ravz ~/setup/homedir/* ~/
 rsync -ravz ~/setup/homedir/.* ~/
 
+# Rsync bin setup
+mkdir -p ~/bin
+
+rsync -ravz ~/setup/bin/* ~/bin
+rsync -ravz ~/setup/bin/.* ~/bin
+
 # Setup fzf key-bindings and completion for zsh
 #echo "source /usr/share/doc/fzf/examples/key-bindings.zsh" >> ~/.zshrc_alias
 #echo "source /usr/share/doc/fzf/examples/completion.zsh" >> ~/.zshrc_alias
