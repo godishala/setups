@@ -1,10 +1,13 @@
 #!/bin/bash
 
+
 #Set variables
-GITHUB_USER="@gitusernamehere"
+GITHUB_USER="@username"
 REPO_NAME="setup"
 CLONE_DIR="$HOME/${REPO_NAME}"
 SSH_KEY_PATH="$HOME/.ssh/setup"
+
+mkdir -p $CLONE_DIR
 
 # 1. Generate SSH Key Pair
 echo "Generating SSH key pair..."
