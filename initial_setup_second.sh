@@ -26,5 +26,9 @@ fi
 rsync -ravz "$HOMEDIR" "$HOME"/
 mkdir -p "$HBIN"
 rsync -ravz "$SETBIN" "$HBIN"
+
+chsh -s $(which zsh)
+
 echo "Setup completed!"
 
+echo "Execute 'exec zsh -l'"
